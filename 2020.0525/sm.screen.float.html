@@ -17,12 +17,14 @@
         * {
             box-sizing: border-box;
         }
-        /*  */
+        /*  box-sizing屬性可以允許我們不用自己計算元素中盒模型的邊界間距 */
+        /* 選取所有的元素將css盒模型屬性指定為內邊距和邊框都將在盒子內 */
         
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
-        /* Style the header */
+        /* font-family這個css屬性可以指定這個元素中的文字要顯示的字體 */
+        /* 將body標籤中的內容文字字體都指定為 Arial, Helvetica, sans-serif */
         
         .header {
             background-color: #f1f1f1;
@@ -30,14 +32,14 @@
             text-align: center;
             font-size: 35px;
         }
-        /* Create three equal columns that floats next to each other */
+        /*用css選取器改變樣式，這裡是改變類別是header的元素，將背景顏色調成使用十六進制的淺灰色，邊內距30像素，文字對齊置中，文字大小35像素 */
         
         .column {
             float: left;
             width: 33.33%;
             padding: 10px;
             height: 300px;
-            /* Should be removed. Only for demonstration */
+            /*用css選取器改變樣式，這裡是改變類別是column的元素，讓元素內的內容浮在左邊，寬度33.33%邊內距10像素，高度300像素*/
         }
         /* Clear floats after the columns */
         
@@ -45,7 +47,10 @@
             content: "";
             display: table;
             clear: both;
+            ;
         }
+        /* 用css選取器改變樣式，這裡是改變類別是row的::after偽元素，在類別為row元素之後加入內容，同時也會繼承原本元素的屬性 */
+        /* 在這邊加上了空白內容，並改變元素的表現方式，模擬成表格來使用，最後利用clear: both 來清除所有的浮動元素(float);*/
         /* Style the footer */
         
         .footer {
@@ -54,6 +59,7 @@
             text-align: center;
         }
         /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+        /*  */
         
         @media (max-width: 600px) {
             .column {
