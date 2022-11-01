@@ -1,0 +1,9 @@
+.note {
+  border-left: 0.25rem solid #89c085;
+  padding: 1.25rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+.note-success {
+  background: rgba(137,192,133,0.5);
+}
