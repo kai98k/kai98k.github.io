@@ -4,7 +4,6 @@ Allow: /
 Allow: /archives/
 Allow: /categories/
 Allow: /about/
-Allow: /links/ 
 Allow: /2022/
 
 Disallow: /js/
