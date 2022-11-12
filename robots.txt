@@ -1,12 +1,11 @@
-# hexo robots.txt
 User-agent: *
 Allow: /
 Allow: /archives/
 Allow: /categories/
-Allow: /about/
-Allow: /2022/
-
-Disallow: /js/
-Disallow: /css/
-
-Sitemap: https://l1uxo330b7.github.io/sitemap.xml
+Allow: /tags/ 
+Allow:/2022/
+Disallow: /vendors/
+Disallow: /fonts/
+Disallow: /vendors/
+Disallow: /fancybox/
+Sitemap: https://l1uxo330b7.github.io//sitemap.xml
