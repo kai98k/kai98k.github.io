@@ -16,7 +16,7 @@
         <div class="envelope">
             <div class="front">
                 <div class="mail">
-                    <p>這次我真的會把握機會，不再錯過了!</p>
+                    <p>這次我真的會把握!<br>不再錯過了!</p>
                     <p id="openMail">Click me</p>
                 </div>
             </div>
@@ -24,7 +24,7 @@
                 <div class="letter">
                     <p>親愛的映彣:</p>
                     <p class="typeEffect">
-                        抱歉，我用錯的方法跟你溝通，不小心傷害到你了，對我來說你很重要，我從來沒有想要傷害你的意思，希望你能原諒我，而且未來我們能夠對彼此都不要隱瞞，而且認真對待對方!
+                        抱歉，我用錯的方法跟你溝通，不小心傷害到你了，對我來說你很重要，我從來沒有想要傷害你的意思，希望你能原諒我，而且未來我們能夠對彼此都不要隱瞞，而且認真對待對方和相處!
                     </p>
                     <div class="buttons">
                         <button id="cancel">下一步</button>
@@ -232,6 +232,14 @@
         container.fadeOut();
         $('.envelope').slideDown();
      });
+
+    let htmlString = `
+    <span>謝謝妳願意繼續跟我相處!<br>請點一下照片!</span>
+    <a href='https://line.me/ti/p/R0gBYXr3SR'><img src='./asset/dear.jpg' class='photo'><a>
+    `;
+    $('#cancel').click(()=>{
+        $('.letter').html(htmlString);
+    });
     var windowWidth = window.innerWidth;
     var windowHeight = window.innerHeight;
 

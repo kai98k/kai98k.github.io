@@ -18,6 +18,12 @@ body {
     box-sizing: border-box;
     font-family:"Noto Sans TC", sans-serif;
 }
+
+.photo{
+  margin-top: 1.2rem;
+  width: 100%;
+  max-width: 300px;
+}
 .container {
     width: 600px;
     -webkit-transform: translate(-50%, -50%);
