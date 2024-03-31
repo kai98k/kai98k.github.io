@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 body {
+    font-family: "Noto Sans TC", sans-serif;
     width: 100vw;
     height: 100vh;
     background: #fefefe;
@@ -13,7 +16,7 @@ body {
 }
 * {
     box-sizing: border-box;
-    font-family: "Cabin", Arial, sans-serif;
+    font-family:"Noto Sans TC", sans-serif;
 }
 .container {
     width: 600px;
@@ -105,7 +108,6 @@ svg {
     display: none;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Allan:700,400);
 
 body, html {
   width: 100%;
@@ -124,12 +126,10 @@ body {
   display: none;
   z-index: 2;
   position: absolute;
-  width: 550px;
+  width: 330px;
   height: 366.66667px;
   top: 50%;
-  left: 50%;
   margin-top: -183.33333px;
-  margin-left: -275px;
   transform-style: preserve-3d;
   transform-origin: right center;
   transition: transform 1s ease;
@@ -173,6 +173,7 @@ body {
   border-radius: 2px;
 }
 .envelope .front .mail {
+  padding: 10px;
   text-align: center;
   display: table-cell;
   vertical-align: middle;
@@ -183,10 +184,10 @@ body {
   margin: 0;
 }
 .envelope .back .letter p {
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 20px;
 	letter-spacing: 2px;
-	color: #ff969f;
+	color: black;
+  font-weight: 700;
 }
 .envelope .front .mail p:first-child {
   font-size: 30px;
@@ -223,8 +224,8 @@ body {
 
 }
 .envelope .back .top-flip:before, .envelope .back .bottom-flip:before {
-  width: 388.90873px;
-  height: 388.90873px;
+  width: 230px;
+  height: 230px;
 }
 .envelope .back .top-flip {
   z-index: 5;
@@ -248,8 +249,8 @@ body {
   border-top-right-radius: 10px;
 }
 .envelope .back .left-flip:before, .envelope .back .right-flip:before {
-  width: 269.27249px;
-  height: 269.27249px;
+  width: 300px;
+  height: 300px;
   top: -5px;
 }
 .envelope .back .left-flip {
@@ -278,11 +279,11 @@ body {
   position: absolute;
   top: 5px;
   left: 10px;
-  width: 530px;
+  width: 300px;
   height: 346.66667px;
   background-color: #FFF;
   border-radius: 5px;
-  padding: 0 30px;
+  padding: 0 16px;
   box-sizing: border-box;
   box-shadow: 0px 1px 100px #fbc0b9eb;
 }
@@ -369,7 +370,9 @@ body {
 }
 
 
-
+.typeEffect{
+  font-size: 16px !important;
+}
 @keyframes new {
   0% {
     display: block;
@@ -395,6 +398,13 @@ body {
   100% {
     transform: translate3d(-100%, 733.33333px, 0) rotateY(-180deg);
   }
+}
+@keyframes typing {
+	from { width: 0 }
+}
+
+@keyframes caret {
+	50% { border-right-color: transparent; }
 }
 @keyframes flip-open {
   0% {
@@ -474,7 +484,6 @@ body {
 
 
 
-//cake
 
 
 .cake {
