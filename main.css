@@ -21,8 +21,7 @@ body {
 
 .photo{
   margin-top: 1.2rem;
-  width: 100%;
-  max-width: 300px;
+  width: 270px;
 }
 .container {
     width: 600px;
@@ -133,7 +132,7 @@ body {
   z-index: 2;
   position: absolute;
   width: 330px;
-  height: 366.66667px;
+  height: 400px;
   top: 50%;
   margin-top: -183.33333px;
   transform-style: preserve-3d;
@@ -203,15 +202,12 @@ body {
 .envelope .front .mail p:last-child {
   font-size: 30px;
 }
-.envelope .back .letter p:nth-child(2) {
-  font-size: 30px;
-	color: black;
+.envelope .back .letter>div h3{
+  font-size: 20px;
+  font-weight: 700;
 }
-.envelope .back .letter p:nth-child(3) {
-  font-size: 30px;
-	color: #f57882;
-	margin-top: 150px;
-	float: right;
+.envelope .back .letter>div p{
+  font-size: 16px;
 }
 .envelope .back {
   transform: rotateY(180deg) translate3d(0, 0, 1px);
@@ -229,9 +225,16 @@ body {
   box-shadow: 0px 0px 100px #f5c1bc52;
 
 }
-.envelope .back .top-flip:before, .envelope .back .bottom-flip:before {
+.nextTextBox{
+  display: none;
+}
+.envelope .back .top-flip:before{
   width: 230px;
   height: 230px;
+}
+.envelope .back .bottom-flip:before {
+  width: 230px;
+  height: 300px;
 }
 .envelope .back .top-flip {
   z-index: 5;
@@ -286,7 +289,7 @@ body {
   top: 5px;
   left: 10px;
   width: 300px;
-  height: 346.66667px;
+  height: 390px;
   background-color: #FFF;
   border-radius: 5px;
   padding: 0 16px;

@@ -22,12 +22,19 @@
             </div>
             <div class="back">
                 <div class="letter">
-                    <p>親愛的映彣:</p>
-                    <p class="typeEffect">
-                        抱歉，我用錯的方法跟你溝通，不小心傷害到你了，對我來說你很重要，我從來沒有想要傷害你的意思，希望你能原諒我，而且未來我們能夠對彼此都不要隱瞞，而且認真對待對方和相處!
-                    </p>
-                    <div class="buttons">
-                        <button id="cancel">下一步</button>
+                    <div class="textBox">
+                        <h3>親愛的映彣:</h3>
+                        <p class="typeEffect">
+                            我很抱歉用錯方式跟你溝通，無意中造成你的傷害，對我來說你很重要，從未有想要傷害你的意思，真心希望你能原諒我，之後我都會先將我的思緒整理好再跟你溝通!
+                        </p>
+                        <p class="">期望未來我們都能對彼此都沒有隱瞞，然後更認真對待對方和相處!</p>
+                        <div class="buttons">
+                            <button id="cancel">下一步</button>
+                        </div>
+                    </div>
+                    <div class="nextTextBox">
+                        <p>謝謝妳願意繼續跟我相處!<br>請點一下照片!</p>
+                        <a href='https://line.me/ti/p/R0gBYXr3SR'><img src='./asset/dear.jpg' class='photo'><a>
                     </div>
                 </div>
                 <div class="flip left-flip"></div>
@@ -233,12 +240,9 @@
         $('.envelope').slideDown();
      });
 
-    let htmlString = `
-    <span>謝謝妳願意繼續跟我相處!<br>請點一下照片!</span>
-    <a href='https://line.me/ti/p/R0gBYXr3SR'><img src='./asset/dear.jpg' class='photo'><a>
-    `;
     $('#cancel').click(()=>{
-        $('.letter').html(htmlString);
+        $('.textBox').fadeOut().delay(3000);
+        $('.nextTextBox').fadeIn(3000);
     });
     var windowWidth = window.innerWidth;
     var windowHeight = window.innerHeight;
